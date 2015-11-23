@@ -13,9 +13,9 @@ module AnnotateModels
   # I dont use windows, can`t test
   UNIT_TEST_DIR         = File.join("test", "unit")
   MODEL_TEST_DIR        = File.join("test", "models") # since rails 4.0
-  SPEC_MODEL_DIR        = File.join("spec", "models")
+  SPEC_MODEL_DIR        = File.join("spec", "models", "**")
   FIXTURE_TEST_DIR      = File.join("test", "fixtures")
-  FIXTURE_SPEC_DIR      = File.join("spec", "fixtures")
+  FIXTURE_SPEC_DIR      = File.join("spec", "fixtures", "**")
 
   # Object Daddy http://github.com/flogic/object_daddy/tree/master
   EXEMPLARS_TEST_DIR    = File.join("test", "exemplars")
@@ -26,17 +26,17 @@ module AnnotateModels
   BLUEPRINTS_SPEC_DIR   = File.join("spec", "blueprints")
 
   # Factory Girl http://github.com/thoughtbot/factory_girl
-  FACTORY_GIRL_TEST_DIR = File.join("test", "factories")
-  FACTORY_GIRL_SPEC_DIR = File.join("spec", "factories")
+  FACTORY_GIRL_TEST_DIR = File.join("test", "factories", "**")
+  FACTORY_GIRL_SPEC_DIR = File.join("spec", "factories", "**")
 
   # Fabrication https://github.com/paulelliott/fabrication.git
   FABRICATORS_TEST_DIR  = File.join("test", "fabricators")
   FABRICATORS_SPEC_DIR  = File.join("spec", "fabricators")
 
   # Serializers https://github.com/rails-api/active_model_serializers
-  SERIALIZERS_DIR       = File.join("app",  "serializers")
-  SERIALIZERS_TEST_DIR  = File.join("test", "serializers")
-  SERIALIZERS_SPEC_DIR  = File.join("spec", "serializers")
+  SERIALIZERS_DIR       = File.join("app",  "serializers", "**")
+  SERIALIZERS_TEST_DIR  = File.join("test", "serializers", "**")
+  SERIALIZERS_SPEC_DIR  = File.join("spec", "serializers", "**")
 
 
   TEST_PATTERNS = [
